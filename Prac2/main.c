@@ -114,7 +114,7 @@ int main(void)
 
   // TODO: Start timer TIM16
   HAL_TIM_Base_Start_IT(&htim16);
-  arr_value= TIM16->ARR;
+//  arr_value= TIM16->ARR;
 
   // TODO: Write all "patterns" to EEPROM using SPI
 for(uint16_t i=0; i<sizeof(patterns);i++){
@@ -142,10 +142,10 @@ pressed=false;
 }
 }
 if(pressed){
-	TIM16->ARR = arr_value/2;
+	__HAL_TIM_SET_AUTORELOAD(&htim16,500-1);
 }
 else{
-	TIM16->ARR = arr_value;
+	__HAL_TIM_SET_AUTORELOAD(&htim16,1000-1);
 }
 
 
