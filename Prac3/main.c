@@ -18,7 +18,9 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
+/** Github link
+//https://github.com/aimeesimons/NDXDAN019_SMNAIM002_EEE3096S.git
+ */
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
